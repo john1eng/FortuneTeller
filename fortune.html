@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fortune Teller</title>
+    <link rel="stylesheet" href="fortune.css">
+  </head>
+  <body>
+    <h1 class="center"> What's your fortune? </h1><br><br><br><br>
+
+    <form class ="center1" name="fortuneForm">
+      Geographic Location:<input name="geographicLocation"><br/>
+      Number of children:<input name="children"><br/>
+      Partner's Name:<input name="partnersName"><br/>
+      Job Title:<input name="jobTitle"><br/>
+      <input type="button" value ="Your Fortune" onClick= "return fortune()">
+    </form>
+  <br><br>
+
+  <div class = "center">
+    <button onClick = "return ranFortune()"><b>Random Fortune</b></button>
+    <!--<input type=button" value="Random Fortune"" onClick = "return ranFortune()">-->
+    </div>
+
+    <br><br>
+  <div class = "center"> <img src="crystal.gif" alt ="crystal ball" height = "100"></div>
+    <h2 class="center"> Here's your fortune: </h2>
+    <h3 class = "center" id=yourFortune></h3>
+  <script src="fortune.js"> </script>
+
+
+  </body>
+</html>
